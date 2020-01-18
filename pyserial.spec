@@ -3,7 +3,7 @@
 Summary: Python serial port access library
 Name: pyserial
 Version: 2.6
-Release: 5%{?dist}
+Release: 6%{?dist}
 Source0: http://easynews.dl.sourceforge.net/sourceforge/%{name}/%{name}-%{version}.tar.gz
 License: Python
 Group: Development/Libraries
@@ -39,6 +39,10 @@ rm -rf $RPM_BUILD_ROOT
 %{_bindir}/miniterm.py
 
 %changelog
+* Thu Apr 13 2017 Charalampos Stratakis <cstratak@redhat.com> - 2.6-6
+- Import to RHEL 7
+Resolves: rhbz#1434890
+
 * Fri Dec 27 2013 Daniel Mach <dmach@redhat.com> - 2.6-5
 - Mass rebuild 2013-12-27
 
